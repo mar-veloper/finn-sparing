@@ -1,8 +1,12 @@
-# VG Lab Spareløsning
+---
+title: 'VG Lab Spareløsning'
+output:
+  github_document:
+    toc: true
+    toc_depth: 2
+---
 
 > A platform to help you choose a savings solution best for your need.
-
-[TOC]
 
 ## Getting Started
 
@@ -105,4 +109,4 @@ Time is my number one enemy here, but I give no excuses. But if I have more time
 
 ### Conclusion
 
-This was fun and challenging task and I hope you like the solution I came up with. 🤓 
+This was fun and challenging task and I hope you like the solution I came up with. 🤓
