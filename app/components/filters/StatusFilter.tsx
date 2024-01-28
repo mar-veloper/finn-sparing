@@ -16,7 +16,7 @@ const StatusFilter = () => {
   }
 
   return (
-    <div className="flex flex-col w-full px-5">
+    <div className="flex flex-col w-full">
       <h3 className="text-lg font-semibold text-neutral mb-5">
         Velg din status som søkere:
       </h3>

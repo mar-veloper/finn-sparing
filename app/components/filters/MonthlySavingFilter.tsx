@@ -13,7 +13,7 @@ const MonthlySavingFilter = () => {
   }
 
   return (
-    <label className=" flex flex-col p-5 text-sm font-semibold text-neutral mb-2 w-full">
+    <label className=" flex flex-col text-sm font-semibold text-neutral mb-2 w-full">
       <p className="mb-5">
         Månedlig sparing:{' '}
         <span className="text-lg">

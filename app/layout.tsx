@@ -17,24 +17,24 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <BanksContextProvider>
-          <header className="px-5">
+          <header className="px-5 max-w-4xl mx-auto">
             <nav className="navbar bg-base-200 text-base-200-content flex justify-between rounded-full px-5 w-full my-5 mx-auto">
               <Link
                 className="text-xl font-semibold capitalize font-sans"
                 href="/"
               >
-                Finn Sparing
+                VG Lab Spareløsning
               </Link>
               <div className="flex gap-5">
-                <Link href="/banksparinger">Produkter</Link>
-                <Link href="/banksparinger" className="indicator">
+                <Link href="/produkter">Produkter</Link>
+                <Link href="/sammenligne" className="indicator">
                   <span className="indicator-item badge badge-accent">5</span>
                   Sammenligne
                 </Link>
               </div>
             </nav>
           </header>
-          <main className="px-5">{children}</main>
+          <main className="px-5 mx-auto max-w-3xl">{children}</main>
         </BanksContextProvider>
       </body>
     </html>

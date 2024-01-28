@@ -31,6 +31,9 @@ export function paginate({ items, currentPage, itemsPerPage }: PaginateArgs) {
     data: newData,
   }
 }
+export function getAllBankId(banks: Bank[]) {
+  return banks.map((bank) => bank.bankNumber)
+}
 
 export function sortByInterestRate(array: Bank[], order: string = 'desc') {
   return array.sort((a, b) => {
@@ -56,6 +59,13 @@ export function findHighestInterestRateProperty(bank: Bank) {
     bank.interestRate6,
   ].filter((rate) => rate !== null)
 
+  if (!interestRates.length) {
+    return {
+      highestInterestRate: 0,
+      indexOfHighestInterestRate: 'interestRate1',
+    }
+  }
+
   const highestInterestRate = Math.max(...(interestRates as number[]))
 
   const indexOfHighestInterestRate = interestRates.findIndex(
@@ -63,7 +73,7 @@ export function findHighestInterestRateProperty(bank: Bank) {
   )
 
   return {
-    highestInterestRate,
+    highestInterestRate: highestInterestRate || 0,
     indexOfHighestInterestRate: `interestRate${indexOfHighestInterestRate + 1}`,
   }
 }
@@ -135,5 +145,10 @@ export function getAllBankNames(banks: Bank[]) {
 }
 
 export function getKeywords(banks: Bank[]) {
-  return banks.map((bank) => bank.name[0])
+  const keywords = banks.map((bank) => bank.name.split(' ')[0])
+  const filteredKeywords = Array.from(new Set(keywords)).filter(
+    (keyword) => keyword.length > 2
+  )
+
+  return filteredKeywords
 }

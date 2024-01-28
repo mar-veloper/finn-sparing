@@ -41,7 +41,7 @@ export interface Bank {
   minAge: number
   minAmount: number
   followUp: boolean
-  pensioner: boolean
+  isPensionist: boolean
   publishedFrom: string
   publishedTo: null
   highestInterestRate: number
@@ -52,7 +52,7 @@ export interface Bank {
   interestRate5: null | number
   interestRate6: null | number
   specialConditions: string | null
-  student: boolean
+  isStudent: boolean
   trapType: boolean | string
   isPackageNotNeeded: boolean
   membership: null | string

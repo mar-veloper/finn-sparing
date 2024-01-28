@@ -6,7 +6,7 @@ const StepsContainer = () => {
   const [step] = useQueryState('step', parseAsInteger.withDefault(1))
 
   return (
-    <ul className="steps my-8 w-4/6">
+    <ul className="steps my-8 w-2/4">
       <li
         className={classNames({
           step: true,
@@ -22,15 +22,15 @@ const StepsContainer = () => {
           'step-secondary': step >= 2,
         })}
       >
-        Detaljer som er nyttig
+        Viktige detaljer
       </li>
       <li
         className={classNames({
           step: true,
-          'step-secondary': step === 3,
+          'step-secondary': step >= 3,
         })}
       >
-        Nøkkelord
+        Mål
       </li>
     </ul>
   )

@@ -16,7 +16,7 @@ const TrapTypeFilter = () => {
   }
 
   return (
-    <div className="flex flex-col max-w-1/2 px-5">
+    <div className="flex flex-col max-w-1/2">
       <h3 className="text-lg font-semibold text-neutral mb-5">
         Er du interessert i type traprente?
       </h3>

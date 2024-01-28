@@ -22,7 +22,7 @@ const AgeFilter = () => {
     age.minAge !== age.maxAge ? `${age.minAge} - ${age.maxAge}` : age.minAge
 
   return (
-    <label className="flex flex-col justify-evenly p-5 text-sm font-semibold text-neutral mb-2 w-full">
+    <label className="flex flex-col justify-evenly text-sm font-semibold text-neutral mb-2 w-full">
       <p className="mb-5">
         Alder: <span className="text-lg">{ageToRender}</span>
       </p>

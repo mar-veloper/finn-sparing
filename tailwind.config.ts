@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '3xl': '1750px',
+        '4xl': '1920px',
+      },
       fontFamily: {
         default: ['Work Sans', 'sans-serif'],
         sans: ['Work Sans', 'Inter', 'sans-serif'],

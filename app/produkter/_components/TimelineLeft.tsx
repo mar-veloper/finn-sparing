@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
-import { Bank } from '../../../hooks/useBanks/bank.types'
+import { Bank } from '../../hooks/useBanks/bank.types'
 
 interface Props {
   isEven: boolean
@@ -11,7 +11,7 @@ const TimelineLeft = ({ isEven, bank }: Props) => {
   return (
     <div
       className={classNames({
-        '!mb-16  timeline-start md:text-end  ': true,
+        'mb-16  timeline-start md:text-end  ': true,
       })}
     >
       <time className="font-mono italic">{bank.bankName}</time>

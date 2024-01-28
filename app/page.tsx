@@ -8,7 +8,9 @@ import ButtonsContainer from './home/ButtonsContainer'
 import StepsContainer from './home/StepsContainer'
 import TrapTypeFilter from './components/filters/TrapTypeFilter'
 import MonthlySavingFilter from './components/filters/MonthlySavingFilter'
-import KeywordsFilter from './components/filters/KeywordsFilter'
+import classNames from 'classnames'
+import GoalTimeframeFilter from './components/filters/GoalTimeframeFilter'
+import SavingGoalFilter from './components/filters/SavingGoalFilter'
 
 export default function Home() {
   const defaultStep = parseAsInteger.withDefault(1)
@@ -22,7 +24,11 @@ export default function Home() {
       <StepsContainer />
       <div className="relative artboard artboard-horizontal bg-base-200 phone-4 rounded-lg flex items-center justify-center flex-col px-8">
         <form
-          className="w-full grid grid-cols-2"
+          className={classNames({
+            'w-full grid': true,
+            'grid-cols-2 gap-10': step !== 3,
+            'w-1/2 grid-cols-1 gap-10': step === 3,
+          })}
           onSubmit={(e) => e.preventDefault()}
         >
           <Switch>
@@ -36,7 +42,8 @@ export default function Home() {
               <MonthlySavingFilter />
             </Case>
             <Case condition={step === 3}>
-              <KeywordsFilter />
+              <GoalTimeframeFilter />
+              <SavingGoalFilter />
             </Case>
           </Switch>
         </form>

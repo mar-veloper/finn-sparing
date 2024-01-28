@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { If } from 'react-if'
+import { If, Then } from 'react-if'
 import { parseAsInteger, useQueryState } from 'nuqs'
 import { useRouter } from 'next/navigation'
 
@@ -13,7 +13,7 @@ const ButtonsContainer = () => {
     const query = new URLSearchParams(window.location.search)
 
     if (step === 3) {
-      return router.push('/banksparinger' + '?' + query.toString())
+      return router.push('/produkter' + '?' + query.toString())
     }
 
     return setStep(step + 1)
@@ -22,19 +22,21 @@ const ButtonsContainer = () => {
   return (
     <div className="artboard artboard-horizontal !h-16 mt-0 phone-4 flex justify-between items-center ">
       <Link
-        href="/banksparinger"
+        href="/produkter"
         className="text-sm underline hover:text-secondary"
       >
         Hopp over (Se alle produkter)
       </Link>
       <div className="flex gap-5">
         <If condition={step > 1}>
-          <button
-            onClick={() => setStep(step - 1)}
-            className="btn text-neutral btn-neutral bg-transparent border-none shadow-none hover:text-accent hover:bg-transparent"
-          >
-            Tilbake
-          </button>
+          <Then>
+            <button
+              onClick={() => setStep(step - 1)}
+              className="btn text-neutral btn-neutral bg-transparent border-none shadow-none hover:text-accent hover:bg-transparent"
+            >
+              Tilbake
+            </button>
+          </Then>
         </If>
         <button
           onClick={handleNextStep}
