@@ -76,9 +76,9 @@ I'm in dilemma on which area I should focus on because I'm afraid I will not be 
 
 #### Structure and practices
 
-The structure and practices I used here, is the usual approach I do when I'm building an MVP with short amout of time. As much as possible I don't want to over engineer things but at the same time I always try my best to write maintanable, scalable and easy to read code. Some things you might notice:
+The structure and practices I used here, is the usual approach I do when I'm building an MVP with short amount of time. As much as possible I don't want to over engineer things but at the same time I always try my best to write maintanable, scalable and easy to read code. Some things you might notice:
 
-- I have tried my best While I've put effort into ensuring code readability, time constraints may have resulted in some repetitive sections. Nevertheless, in the MVP stage, flexibility and reusability take precedence.
+- I have tried my best and put effort into ensuring code readability, time constraints may have resulted in some repetitive sections. Nevertheless, in the MVP stage, flexibility and reusability take precedence.
 - I've encapsulated each feature within its designated folder. Files, functions, and components are kept within the feature folder until their reuse becomes necessary.
 - I may not have time to create a fully reusable elements/components, I've focused on developing reusable features, such as the filters components.
 
