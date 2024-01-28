@@ -1,10 +1,4 @@
----
-title: 'VG Lab Spareløsning'
-output:
-  github_document:
-    toc: true
-    toc_depth: 2
----
+# VG Lab Spareløsninger
 
 > A platform to help you choose a savings solution best for your need.
 
