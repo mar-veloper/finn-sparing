@@ -1,8 +1,6 @@
+import { useBanks } from '@/app/hooks/useBanks'
 import { Bank } from '@/app/hooks/useBanks/bank.types'
-import { useBanks } from '@/app/hooks/useBanks/index.'
 import { parseAsString, useQueryState } from 'nuqs'
-import React from 'react'
-import { If, Then } from 'react-if'
 
 interface Props {
   bank: Bank

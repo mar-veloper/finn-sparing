@@ -1,5 +1,5 @@
 'use client'
-import { useBanks } from '@/app/hooks/useBanks/index.'
+import { useBanks } from '@/app/hooks/useBanks'
 import classNames from 'classnames'
 import { parseAsArrayOf, parseAsString, useQueryState } from 'nuqs'
 import React from 'react'

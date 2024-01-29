@@ -1,5 +1,5 @@
 import { Bank } from '@/app/hooks/useBanks/bank.types'
-import { useBanks } from '@/app/hooks/useBanks/index.'
+import { useBanks } from '@/app/hooks/useBanks'
 import classNames from 'classnames'
 import { parseAsString, useQueryState } from 'nuqs'
 import { useEffect, useState } from 'react'

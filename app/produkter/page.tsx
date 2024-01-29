@@ -2,9 +2,9 @@
 import { Bank } from '../hooks/useBanks/bank.types'
 
 import { findHighestInterestRateProperty } from '../hooks/useBanks/bank.helpers'
-import { useBanks } from '../hooks/useBanks/index.'
+import { useBanks } from '../hooks/useBanks'
 import TimelineLeft from './_components/TimelineLeft'
-import TimelineMiddle from './_components/TimelineRight'
+import TimelineRight from './_components/TimelineRight'
 import Pagination from './_components/Pagination'
 
 const ProductsPage = () => {
@@ -23,7 +23,7 @@ const ProductsPage = () => {
           return (
             <li key={bank.id}>
               <TimelineLeft isEven={isEven} bank={bank} />
-              <TimelineMiddle bank={bank} interestRate={interestRate} />
+              <TimelineRight bank={bank} interestRate={interestRate} />
             </li>
           )
         })}
