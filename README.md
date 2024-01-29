@@ -39,7 +39,7 @@ It was a very challenging task since there's no actual task given but more of li
 
 ## Thinking process
 
-Since I have little to no experice in finance, I just tried to come up with something I can relate or at lease what I would want if I'm going to look for savings solutions. So here's how I come up with the idea:
+Since I have little to no experice in finance, I just tried to come up with something I can relate or at least what I would want if I'm going to look for savings solutions. So here's how I come up with the idea:
 
 > P.S: I have no idea if there are already existing solutions for the problem I'm listing here.
 
