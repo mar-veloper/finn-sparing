@@ -29,9 +29,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Main Idea
 
-The main idea is to creating a savings solutions platform to help narrow down the number of products and show only those that are relavant for a specific user. Secondly is presenting the data in more concise and fun way by showing graphs and numbers that users are actually more intersted in. Third and most important is to help create a platform for user to calculate possible returns, growth of fund put into savings account and help them find the best solution to achieve their savings goal.
+The main idea is to create a savings solution platform to help narrow down the number of products and show only those that are relevant for a specific user. Secondly is presenting the data in more concise and fun way by showing graphs and numbers that users are actually more intersted in. Third and most important is to help create a platform for user to calculate possible returns, growth of fund put into savings account and help them find the best solution to achieve their savings goal.
 
-> Note: This is just an idea, I have no exprience in finance so I don't know what allowed and not. :warning:
+> Note: This is just an idea, I have no experience in finance so I don't know what is allowed and not. :warning:
 
 ## Thoughts in process
 
@@ -39,7 +39,7 @@ It was a very challenging task since there's no actual task given but more of li
 
 ## Thinking process
 
-Since I have little to no experice in finance, I just tried to come up with something I can relate or at least what I would want if I'm going to look for savings solutions. So here's how I come up with the idea:
+Since I have little to no experience in finance, I just tried to come up with something I can relate or at least, what I would want if I'm going to look for savings solution. So here's how I come up with the idea:
 
 > P.S: I have no idea if there are already existing solutions for the problem I'm listing here.
 
@@ -80,9 +80,9 @@ The structure and practices I used here, is the usual approach I do when I'm bui
 
 - I have tried my best and put effort into ensuring code readability, time constraints may have resulted in some repetitive sections. Nevertheless, in the MVP stage, flexibility and reusability take precedence.
 - I've encapsulated each feature within its designated folder. Files, functions, and components are kept within the feature folder until their reuse becomes necessary.
-- I may not have time to create a fully reusable elements/components, I've focused on developing reusable features, such as the filters components.
+- I may not have time to create a fully reusable elements/components, but I've focused on developing reusable features, such as the filters components.
 
-Doing such helps me avoid over engineering the project.
+> Doing such helps me avoid over engineering the project.
 
 #### If I have time?
 
