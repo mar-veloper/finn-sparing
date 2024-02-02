@@ -1,4 +1,4 @@
-# VG Lab Spareløsninger
+# Spareløsning
 
 > A platform to help you choose a savings solution best for your need.
 
